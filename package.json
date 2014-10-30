@@ -1,0 +1,61 @@
+{
+  "name": "files-filters",
+  "description": "Functions for fantastically fast file filtering, and more things that start with 'f'.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/files-filters",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/files-filters.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/files-filters/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/files-filters/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "dependencies": {
+    "is-directory": "^0.2.2",
+    "multimatch": "^1.0.0"
+  },
+  "devDependencies": {
+    "filter-files": "^0.2.2",
+    "mocha": "*",
+    "verb": ">= 0.2.6",
+    "verb-tag-jscomments": ">= 0.2.0"
+  },
+  "keywords": [
+    "ext",
+    "glob",
+    "pattern",
+    "re",
+    "regex",
+    "extension",
+    "file",
+    "file-path",
+    "file-system",
+    "filepath",
+    "files",
+    "filter",
+    "fs",
+    "javascript",
+    "js",
+    "path",
+    "system",
+    "util",
+    "utils"
+  ]
+}
