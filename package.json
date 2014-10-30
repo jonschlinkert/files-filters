@@ -1,7 +1,7 @@
 {
   "name": "files-filters",
   "description": "Functions for fantastically fast file filtering, and more things that start with 'f'.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/files-filters",
   "author": {
     "name": "Jon Schlinkert",
@@ -29,11 +29,12 @@
   },
   "dependencies": {
     "is-directory": "^0.2.2",
-    "multimatch": "^1.0.0"
+    "minimatch": "^1.0.0"
   },
   "devDependencies": {
     "filter-files": "^0.2.2",
     "mocha": "*",
+    "should": "^4.1.0",
     "verb": ">= 0.2.6",
     "verb-tag-jscomments": ">= 0.2.0"
   },

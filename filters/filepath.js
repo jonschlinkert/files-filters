@@ -2,6 +2,7 @@
 
 var path = require('path');
 var isDir = require('is-directory');
+var name = require('../utils/name');
 
 module.exports = function(str, method) {
   return function filepath(fp, dir) {
@@ -11,10 +12,10 @@ module.exports = function(str, method) {
     }
 
     if (method && method === 'name') {
-      fp = path.basename(fp, path.extname(fp));
+      fp = name(fp);
     } else if (method && Boolean(path[method])) {
       fp = path[method](fp);
     }
     return fp === str;
-  }
+  };
 };

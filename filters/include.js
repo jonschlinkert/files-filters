@@ -13,5 +13,5 @@ module.exports = function(re, method) {
       fp = path[method](fp);
     }
     return re.test(fp);
-  }
+  };
 };

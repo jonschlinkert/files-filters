@@ -1,10 +1,9 @@
 'use strict';
 
-var path = require('path');
+var name = require('./name');
 
 module.exports = function camelize(fp) {
-  var str = path.basename(fp, path.extname(fp));
-  return str.replace(/-(.)/g, function (_, s) {
+  return name(fp).replace(/-(.)/g, function (_, s) {
     return s.toUpperCase();
   });
 };

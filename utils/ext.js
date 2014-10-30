@@ -2,6 +2,6 @@
 
 var path = require('path');
 
-module.exports = function ext(filepath) {
-  return path.extname(filepath);
+module.exports = function ext(fp) {
+  return path.extname(fp);
 };

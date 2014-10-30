@@ -1,6 +1,5 @@
 'use strict';
 
-var path = require('path');
 var lookup = require('filter-files');
 var camelize = require('../utils/camelize');
 var exclude = require('./exclude');

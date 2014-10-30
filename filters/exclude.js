@@ -1,7 +1,6 @@
 'use strict';
 
 var path = require('path');
-var isDir = require('is-directory');
 
 module.exports = function(re, method) {
   method = method || 'basename';
