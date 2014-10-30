@@ -18,7 +18,7 @@ npm test
 ## Usage
 
 ```js
-var filter = require('files-filters');
+var filters = require('files-filters');
 var files = require('filter-files');
 
 var exclude = filters.exclude(/node_modules/);
