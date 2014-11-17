@@ -2,7 +2,6 @@
 
 var path = require('path');
 var isDir = require('is-directory');
-var mm = require('minimatch');
 
 module.exports = function(pattern, options, recurse) {
   if (typeof options === 'boolean') {
@@ -15,6 +14,8 @@ module.exports = function(pattern, options, recurse) {
     if (typeof dir === 'string' && isDir(fp)) {
       return true;
     }
+
+    var mm = require('minimatch');
     return mm(fp, pattern, options);
   };
 };

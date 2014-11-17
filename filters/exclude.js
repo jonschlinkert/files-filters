@@ -1,16 +1,24 @@
 'use strict';
 
 var path = require('path');
+var isDir = require('is-directory');
 
 module.exports = function(re, method) {
-  method = method || 'basename';
-
   return function exclude(fp, dir) {
     fp = path.join(dir, fp);
+
+    if (typeof dir === 'string' && isDir(fp) && !re.test(dir)) {
+      return true;
+    }
 
     if (method && Boolean(path[method])) {
       fp = path[method](fp);
     }
-    return !re.test(fp);
+
+    if (re.test(fp) || re.test(dir)) {
+      return false;
+    }
+
+    return true;
   };
 };
